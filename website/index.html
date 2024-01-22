@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz TIN</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form id="formularz" onsubmit="showSummary(event)">
+      <h1>Zażalenie</h1>
+      <h3>Numer indeksu:</h3>
+      <input type="ska" id="sId">
+      <h3>Treść skargi:</h3>
+      <textarea id="skarga" rows="4" cols="50"></textarea>
+      <h3>Priorytet:</h3>
+      <label for="niski" class="radios">Niski:</label>
+      <input class="radios" type="radio" id="niski" name="priorytet" value="Niski">
+      <label for="wysoki" class="radios">Wysoki:</label>
+      <input class="radios" type="radio" id="wysoki" name="priorytet" value="Wysoki">
+      <br>
+      <button type="send">Wyślij</button>
+    </form>
+    <div id="result"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
